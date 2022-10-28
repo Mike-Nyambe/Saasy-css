@@ -1,0 +1,17 @@
+//abstract folders
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+// base files
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+// componet files
+@import "components/button";
+// layout files
+@import "layout/grid";
+@import "layout/header";
+// page files
+@import "pages/home";
+// color varaibles

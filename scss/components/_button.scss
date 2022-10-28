@@ -11,5 +11,12 @@
 
 .btn--white {
     background-color: #FFF;
-    color: #111;
+    color: $text-color;
+}
+
+.btn-text {
+    &:link,
+    &::visited {
+        color: $text-color;
+    }
 }

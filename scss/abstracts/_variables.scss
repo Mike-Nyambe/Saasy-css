@@ -1,10 +1,17 @@
 //colors
-$dark-green:#28b485;
-$medium-green:#55c57a;
-$light-green:#7ed56f;
+$primary-color-dark:#28b485;
+$primary-color-light:#55c57a;
+$primary-color:#7ed56f;
+$secondary-color-light:#ffb900;
+$secondary-color-dark:#ff7730;
+$tertiary-color-light:#2298ff;
+$tertiary-color-dark:#5643fa;
 $white-color:#fff;
-$light-grey-1:#f7f7f7;
+$light-bg-color:#f7f7f7;
 $text-color:#111;
+$dark-color:#000;
+//font
+$general-font-size:1.6rem;
 //grid variables
 $grid_width:114rem;
 $gutter_vertical:8rem;

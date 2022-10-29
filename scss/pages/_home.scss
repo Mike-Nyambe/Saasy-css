@@ -1,5 +1,22 @@
 .section-about {
-    background-color: $light-grey-1;
+    background-color: $light-bg-color;
     padding: 25rem 0;
     margin-top: -20vh;
+}
+
+.section__features {
+    padding: 20rem 0;
+    background: linear-gradient(to right bottom, rgba($primary-color-dark, 0.8), rgba($primary-color, 0.8)), url("../img/hero.jpg");
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+    &>* {
+        transform: skewY(7deg);
+    }
+}
+
+.section__courses {
+    background-color: $light-bg-color;
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
 }

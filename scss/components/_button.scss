@@ -1,6 +1,6 @@
 .btn:link,
 .btn:visited {
-    font-size: 1.7rem;
+    font-size: $general-font-size;
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
@@ -10,13 +10,34 @@
 }
 
 .btn--white {
-    background-color: #FFF;
+    background-color: $white-color;
     color: $text-color;
+}
+
+.btn--diff {
+    background-color: $primary-color-dark;
+    color: $white-color;
 }
 
 .btn-text {
     &:link,
-    &::visited {
-        color: $text-color;
+    &:visited {
+        color: $primary-color;
+        font-size: $general-font-size;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 1px solid $primary-color;
+        padding: 3px;
+        transition: all 1s;
+    }
+    &:hover {
+        color: $white-color;
+        background-color: $primary-color;
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba($dark-color, .15);
+    }
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 .5rem 1rem rgba($dark-color, .15);
     }
 }

@@ -1,9 +1,10 @@
 .header {
     height: 95vh;
-    background: linear-gradient(to right bottom, rgba($dark-green, 0.8), rgba($light-green, 0.8)), url("../img/hero.jpg");
+    background: linear-gradient(to right bottom, rgba($primary-color-dark, 0.8), rgba($primary-color, 0.8)), url("../img/hero.jpg");
     background-position: top;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
     &__log-box {
         position: absolute;
         top: 4rem;
@@ -14,7 +15,7 @@
     }
     &__main_box {
         position: absolute;
-        top: 25%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;

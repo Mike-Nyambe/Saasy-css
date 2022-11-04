@@ -14,6 +14,40 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-check">
+        <label for="nav-check" class="navigation__button">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">home</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">about us</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">courses</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">certifications</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <header class="header">
         <div class="header__log-box">
@@ -137,7 +171,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$89</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Get course</a>
+                                <a href="#popup" class="btn btn--white">Get course</a>
                             </div>
                         </div>
                     </div>
@@ -165,7 +199,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$89</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Get course</a>
+                                <a href="#popup" class="btn btn--white">Get course</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +227,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$89</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Get course</a>
+                                <a href="#popup" class="btn btn--white">Get course</a>
                             </div>
                         </div>
                     </div>
@@ -321,6 +355,25 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="some image right here" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="some image right here" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section__courses" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary util-bottom-margin-small">Lorem consectetur adipisicing.</h2>
+                    <h3 class="heading-tetiary util-bottom-margin-small">Lorem ipsum dolor sit amet.</h3>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est harum maiores ipsum amet mollitia sed commodi aut, consequuntur minus animi corporis dignissimos ipsam doloremque hic sint nulla! Accusamus qui velit repudiandae quidem quia assumenda, incidunt
+                        aliquam voluptas. A sequi dignissimos nobis, eius itaque ex est. Expedita vitae labore facilis ullam!
+                    </div>
+                    <a href="#" class="btn btn--diff">buy course</a>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- <section class="test-grid ">
         <div class="row ">

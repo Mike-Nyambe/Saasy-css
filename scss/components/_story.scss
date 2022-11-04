@@ -7,6 +7,14 @@
     box-shadow: 0 3rem 6rem rgba($dark-color, .1);
     background-color: rgba($white-color, .6);
     transform: skewx(-12deg);
+    @include respond (tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+    @include respond (phone) {
+        transform: skewx(0);
+    }
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -15,6 +23,9 @@
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewx(12deg);
         position: relative;
+        @include respond (phone) {
+            transform: translateX(-3rem) skewx(0);
+        }
     }
     &__img {
         height: 100%;
@@ -36,6 +47,9 @@
     }
     &__text {
         transform: skewx(12deg);
+        @include respond (phone) {
+            transform: translateX(-3rem) skewx(0);
+        }
     }
     &:hover &__caption {
         transform: translate(-50%, -50%);

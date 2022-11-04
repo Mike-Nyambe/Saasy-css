@@ -7,6 +7,9 @@
     box-shadow: 0 1.5rem 2rem rgba($dark-color, .15);
     transition: transform 1s;
     height: 100%;
+    @include respond (tab-port) {
+        padding: 1.5rem;
+    }
     .fa {
         font-size: 6rem;
         margin-bottom: .5rem;
@@ -14,6 +17,9 @@
         display: inline-block;
         -webkit-background-clip: text;
         color: transparent;
+        @include respond (tab-port) {
+            padding: .3rem;
+        }
     }
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);

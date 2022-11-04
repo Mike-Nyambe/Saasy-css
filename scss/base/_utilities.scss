@@ -8,10 +8,16 @@
 
 .util-bottom-margin-medium {
     margin-bottom: 4rem !important;
+    @include respond(tab-port) {
+        margin-bottom: 3rem !important;
+    }
 }
 
 .util-bottom-margin-big {
     margin-bottom: 8rem !important;
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
 }
 
 .util-top-margin-big {

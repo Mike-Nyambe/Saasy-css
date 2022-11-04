@@ -97,4 +97,43 @@
         font-size: 6rem;
         font-weight: 100;
     }
+    @include respond (tab-port) {
+        height: auto;
+        border-radius: 5px;
+        background-color: $white-color;
+        box-shadow: 0 1.5rem 5rem rgba($dark-color, .15);
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+            border-radius: 0;
+            &--back {
+                transform: rotateY(0);
+                padding: 4rem;
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+        &__details {
+            padding: 2.5rem;
+        }
+        //back of the card
+        &__cta {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            text-align: center;
+            padding: 6rem 4rem 4rem 4rem;
+        }
+        &__price-box {
+            margin-bottom: 3rem;
+        }
+        &__price-value {
+            font-size: 4rem;
+        }
+    }
 }

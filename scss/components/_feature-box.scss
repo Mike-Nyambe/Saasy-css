@@ -10,18 +10,17 @@
     @include respond (tab-port) {
         padding: 1.5rem;
     }
-    .fa {
-        font-size: 6rem;
-        margin-bottom: .5rem;
-        background-image: linear-gradient(to right, $primary-color-light, $primary-color);
-        display: inline-block;
-        -webkit-background-clip: text;
-        color: transparent;
-        @include respond (tab-port) {
-            padding: .3rem;
-        }
-    }
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
+    }
+}
+
+ion-icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    color: $primary-color-dark;
+    @include respond (tab-port) {
+        padding: .3rem;
     }
 }

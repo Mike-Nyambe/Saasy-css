@@ -50,6 +50,33 @@
             background-image: linear-gradient(to right bottom, $tertiary-color-dark, $tertiary-color-light), url("../img/nat-5.jpg");
         }
     }
+    &__course {
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: $white-color;
+        position: absolute;
+        padding: 4rem;
+        border-radius: 50%;
+        box-shadow: 0 2rem 4rem rgba($dark-color, .35);
+        top: 1.5rem;
+        left: 1.5rem;
+        &--logo {
+            ion-icon {
+                font-size: 5rem;
+            }
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,
+            -50%);
+            margin-top: .9rem;
+        }
+        &--util-icon {
+            ion-icon {
+                font-size: 4.5rem;
+            }
+        }
+    }
     &__heading {
         font-size: 2.8rem;
         font-weight: 300;

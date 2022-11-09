@@ -191,6 +191,26 @@ body {
       background-image: linear-gradient(to right bottom, #28b485, #55c57a), url("../img/nat-5.jpg"); }
     .card__image--img3 {
       background-image: linear-gradient(to right bottom, #5643fa, #2298ff), url("../img/nat-5.jpg"); }
+  .card__course {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #fff;
+    position: absolute;
+    padding: 4rem;
+    border-radius: 50%;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.35);
+    top: 1.5rem;
+    left: 1.5rem; }
+    .card__course--logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: .9rem; }
+      .card__course--logo ion-icon {
+        font-size: 5rem; }
+    .card__course--util-icon ion-icon {
+      font-size: 4.5rem; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -318,18 +338,17 @@ body {
   @media only screen and (max-width: 56.25em) {
     .feature__box {
       padding: 1.5rem; } }
-  .feature__box .fa {
-    font-size: 6rem;
-    margin-bottom: .5rem;
-    background-image: linear-gradient(to right, #55c57a, #7ed56f);
-    display: inline-block;
-    -webkit-background-clip: text;
-    color: transparent; }
-    @media only screen and (max-width: 56.25em) {
-      .feature__box .fa {
-        padding: .3rem; } }
   .feature__box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+
+ion-icon {
+  font-size: 6rem;
+  margin-bottom: .5rem;
+  display: inline-block;
+  color: #28b485; }
+  @media only screen and (max-width: 56.25em) {
+    ion-icon {
+      padding: .3rem; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }

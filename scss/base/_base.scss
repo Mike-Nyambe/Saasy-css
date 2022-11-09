@@ -31,3 +31,8 @@ body {
         margin: 0;
     }
 }
+
+::selection {
+    background-color: $primary-color-dark;
+    color: $white-color;
+}

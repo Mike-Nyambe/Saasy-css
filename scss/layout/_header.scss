@@ -7,7 +7,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
     @media only screen and(min-resolution: 192dpi) and (min-width: 37.5em), only screen and(min-width: 125em) {
-        background: linear-gradient(to right bottom, rgba($secondary-color-dark, 0.8), rgba($primary-color, 0.8)), url("../img/hero.jpg");
+        background: linear-gradient(to right bottom, rgba($primary-color-dark, 0.8), rgba($primary-color, 0.8)), url("../img/hero.jpg");
     }
     &__log-box {
         position: absolute;

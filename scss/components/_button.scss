@@ -10,6 +10,7 @@
     border-radius: 10rem;
     border: none;
     cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 
 .btn--white {
@@ -17,26 +18,40 @@
     color: $text-color;
 }
 
+.btn--white:hover,
+.btn--white:active {
+    background-color: $primary-color-dark;
+    color: $white-color;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 .btn--diff {
     background-color: $primary-color-dark;
     color: $white-color;
 }
 
+.btn--diff:hover,
+.btn--diff:active {
+    background-color: $white-color;
+    color: $primary-color-dark;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 .btn-text {
     &:link,
     &:visited {
-        color: $primary-color;
+        color: $secondary-color-dark;
         font-size: $general-font-size;
         text-decoration: none;
         display: inline-block;
-        border-bottom: 1px solid $primary-color;
+        border-bottom: 1px solid $secondary-color-dark;
         padding: 3px;
         transition: all 1s;
         text-transform: capitalize;
     }
     &:hover {
         color: $white-color;
-        background-color: $primary-color;
+        background-color: $secondary-color-dark;
         transform: translateY(-2px);
         box-shadow: 0 1rem 2rem rgba($dark-color, .15);
     }

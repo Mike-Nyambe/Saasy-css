@@ -41,23 +41,23 @@
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         &--img1 {
-            background-image: linear-gradient(to right bottom, $secondary-color-dark, $secondary-color-light), url("../img/nat-5.jpg");
+            background-image: linear-gradient(to right bottom, $secondary-color-dark, $secondary-color-light), url("../img/html.jpg");
         }
         &--img2 {
-            background-image: linear-gradient(to right bottom, $primary-color-dark, $primary-color-light), url("../img/nat-5.jpg");
+            background-image: linear-gradient(to right bottom, $primary-color-dark, $primary-color-light), url("../img/html-1.jpg");
         }
         &--img3 {
-            background-image: linear-gradient(to right bottom, $tertiary-color-dark, $tertiary-color-light), url("../img/nat-5.jpg");
+            background-image: linear-gradient(to right bottom, $tertiary-color-dark, $tertiary-color-light), url("../img/pic-one.jpg");
         }
     }
     &__course {
         height: 3.5rem;
         width: 3.5rem;
-        background-color: $white-color;
+        background-color: rgba($white-color, 0.60);
         position: absolute;
         padding: 4rem;
         border-radius: 50%;
-        box-shadow: 0 2rem 4rem rgba($dark-color, .35);
+        box-shadow: 0 2rem 4rem rgba($dark-color, .40);
         top: 1.5rem;
         left: 1.5rem;
         &--logo {
@@ -71,9 +71,20 @@
             -50%);
             margin-top: .9rem;
         }
-        &--util-icon {
+        &--util-1 {
+            ion-icon {
+                color: rgba($secondary-color-dark, 0.90);
+            }
+        }
+        &--util-2 {
+            ion-icon {
+                color: rgba($primary-color-dark, 0.90);
+            }
+        }
+        &--util-3 {
             ion-icon {
                 font-size: 4.5rem;
+                color: rgba($tertiary-color-dark, 0.90);
             }
         }
     }
